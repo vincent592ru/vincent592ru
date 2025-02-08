@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string userName;
+    string userResponse;
+
+    cout << "Hi, may sasabihin sana ako] ";
+    getline(cin, userName);  // Get the user's name
+
+    cout << "hmm, " << userName << "! hiya ako eh🤭] ";
+    getline(cin, userResponse);  // Get the user's response about how they're feeling
+
+    cout << "hindi 'ko na kasi matiis] " << userResponse << "! That's great to hear!" << endl;
+
+    cout << "MISS NA MISS NA KITA, HINDI BA HALATA? ";
+    getline(cin, userResponse);  // Get the user's next topic
+
+    cout << "MAY TANONG NAMAN AKO SAYO] " << userResponse << "." << endl;
+
+    cout << "miss mo rinba ako☹️☹️ (yes or no): ";
+    getline(cin, userResponse);  // Get the user's response to keep chatting
+
+    if (userResponse == "yes" || userResponse == "Yes") {
+        cout << "Yay! Let's chat some more!" << endl;
+    } else {
+        cout << "Okay, maybe next time. Take care!" << endl;
+    }
+
+    return 0;
+}
